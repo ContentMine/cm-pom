@@ -33,7 +33,7 @@
 	<scm>
 		<url>https://github.com/ContentMine/cm-pom/src</url>
 		<connection>scm:hg:https://github.com/ContentMine/cm-pom</connection>
-		<developerConnection>scm:hg:https://github.com/ContentMine/cm-pom<</developerConnection>
+		<developerConnection>scm:hg:https://github.com/ContentMine/cm-pom</developerConnection>
 	</scm>
 
 	<developers>
