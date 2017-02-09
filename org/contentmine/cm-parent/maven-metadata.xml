@@ -3,10 +3,10 @@
   <groupId>org.contentmine</groupId>
   <artifactId>cm-parent</artifactId>
   <versioning>
-    <release>7.0.2</release>
+    <release>7.0.3</release>
     <versions>
-      <version>7.0.2</version>
+      <version>7.0.3</version>
     </versions>
-    <lastUpdated>20170209155755</lastUpdated>
+    <lastUpdated>20170209160121</lastUpdated>
   </versioning>
 </metadata>
