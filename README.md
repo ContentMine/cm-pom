@@ -2,6 +2,8 @@
 Parent POM for ContentMine Java/MVN stack
 
 ## ami-stack 2017-03
+**NOTE do not use the scripts till I have checked the branches**
+
 Currently the major effort is in ami. The build process requires 11 builds and is best done from a script.
 
 The stack is
