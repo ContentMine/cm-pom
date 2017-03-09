@@ -1,7 +1,11 @@
 #!/bin/bash
 
-cd
-cd workspace/cmdev
+#cd
+#cd workspace/cmdev
+# cd to the parent directory of the 11 modules
+# this command should show at least the 11 directories 
+
+ls 
 
 cd cm-pom
 mvn clean install
@@ -39,12 +43,14 @@ cd norma
 mvn clean install
 cd ..
 
-cd diagramanalyzer
-mvn clean install
-cd ..
+# comment out if you are only building norma
 
-cd ami
-mvn clean install
-cd ..
+# cd diagramanalyzer
+# mvn clean install
+# cd ..
+
+# cd ami
+# mvn clean install
+# cd ..
 
 

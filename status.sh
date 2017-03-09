@@ -1,7 +1,12 @@
 #!/bin/bash
 
-cd
-cd workspace/cmdev
+# cd
+# cd workspace/cmdev
+
+# cd to the directory above the 11 modules.
+# the next command should list them
+
+ls
 
 cd cm-pom
 echo "======= CM-POM ==="
