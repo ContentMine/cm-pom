@@ -5,52 +5,31 @@
 # cd to the parent directory of the 11 modules
 # this command should show at least the 11 directories 
 
-ls 
 
-cd cm-pom
-mvn clean install
-cd ..
-
-cd euclid
-mvn clean install
-cd ..
-
-cd svg
-mvn clean install
-cd ..
-
-cd html
-mvn clean install
-cd ..
-
-cd imageanalysis
-mvn clean install
-cd ..
-
-cd pdf2svg
-mvn clean install
-cd ..
-
-cd svg2xml
-mvn clean install
-cd ..
-
-cd cproject
-mvn clean install
-cd ..
-
-cd norma
-mvn clean install
-cd ..
-
-# comment out if you are only building norma
-
-# cd diagramanalyzer
-# mvn clean install
-# cd ..
-
-# cd ami
-# mvn clean install
-# cd ..
-
+if [ ! -d cm-pom ]; then
+	echo "Cannot find directory cm-pom; found: "
+	ls
+	return
+fi
+	
+set -e
+dirs=( \
+	cm-pom \
+    euclid \
+    svg \ 
+    html \
+    imageanalysis \
+    pdf2svg \
+    svg2xml \
+    cproject \
+    norma \
+#     diagramanalyzer \		
+#     ami \
+)
+for i in "${dirs[@]}";
+        do cd $i;
+        git pull
+        mvn clean install -DskipTests
+        cd ../;
+done;
 
