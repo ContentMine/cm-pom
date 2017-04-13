@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#cd
-#cd workspace/cmdev
+cd
+cd workspace/cmdev
 # cd to the parent directory of the 11 modules
 # this command should show at least the 11 directories 
 
@@ -25,13 +25,14 @@ pdf2svg \
 svg2xml \
 cproject \
 norma \
-#diagramanalyzer \		
-#ami \
+diagramanalyzer \		
+ami \
 )
 for i in "${dirs[@]}";
         do cd $i;
         git pull
-        mvn clean install -DskipTests
+#        mvn clean install -DskipTests
+        mvn clean install
         cd ../;
 done;
 

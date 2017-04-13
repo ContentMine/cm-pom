@@ -15,7 +15,7 @@
 
 	<groupId>org.contentmine</groupId>
 	<artifactId>cm-parent</artifactId>
-	<version>7.0.4</version>
+	<version>7.1.0</version>
 	<packaging>pom</packaging>
 
 	<name>ContentMine Parent POM</name>
